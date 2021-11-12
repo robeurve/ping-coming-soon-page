@@ -1,0 +1,175 @@
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+  --font: "Libre Franklin", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--gray);
+}
+
+strong {
+  color: var(--very-dark-blue);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.input {
+  width: 100%;
+  padding: 1.8rem 4rem;
+  border-radius: 4rem;
+}
+
+input {
+  border: 2px solid var(--pale-blue);
+}
+
+input::placeholder {
+  font-size: 1.6rem;
+  color: var(--gray);
+  font-weight: 300;
+}
+
+button {
+  color: #fff;
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  font-size: 1.6rem;
+  box-shadow: 0 13px 26px rgba(193, 211, 255, 0.5);
+  -webkit-box-shadow: 0 13px 26px rgba(193, 211, 255, 0.5);
+  -moz-box-shadow: 0 13px 26px rgba(193, 211, 255, 0.5);
+}
+
+.header {
+  padding: 10rem 4rem;
+}
+
+.headings {
+  margin: 5rem 0 4rem 0;
+  padding: 0 1.3rem;
+}
+
+.headings p {
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+  font-weight: 300;
+  color: var(--very-dark-blue);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.main-content {
+  padding: 0 4rem;
+  margin-bottom: 12rem;
+}
+
+.social-networks {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.network {
+  font-size: 2.3rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1px solid var(--pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.network a {
+  color: var(--blue);
+}
+
+.copy {
+  font-size: 1.5rem;
+  color: var(--gray);
+  margin-bottom: 5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .header {
+    padding-top: 8rem;
+  }
+
+  .form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  input.input {
+    width: 63%;
+  }
+
+  button.input {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  body {
+    max-width: 900px;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .headings p {
+    font-size: 2rem;
+  }
+
+  .form {
+    padding: 0 9rem;
+  }
+}
